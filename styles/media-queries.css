@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px) {
+  section#login{
+    flex-direction: row;
+    
+    width: min(100%, 45rem);
+  
+    & > div#imagem{
+      width: 50%;
+    }
+  
+    & > div#form{
+      padding: 2rem 1.25rem;
+
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section#login{
+    flex-direction: row-reverse;
+    
+    width: min(100%, 64rem);
+
+    & > div#form{
+      width: 50%;
+
+      padding-inline: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section#login{
+    width: min(100%, 75rem);
+
+    & > div#form{
+      padding-inline: 2rem;
+
+      & > p{
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
